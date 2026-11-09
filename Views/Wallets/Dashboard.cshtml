@@ -1,0 +1,42 @@
+@model Ewallet.Dtos.WalletDashboardDto
+@{ ViewData["Title"] = "Dashboard Wallet"; }
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow">
+            <div class="card-header bg-dark text-white text-center">
+                <h4 class="mb-0">========== Dana E-WALLET ==========</h4>
+            </div>
+            <div class="card-body">
+                @if (TempData["Success"] != null)
+                {
+                    <div class="alert alert-success">@TempData["Success"]</div>
+                }
+
+                <h5 class="card-title">Welcome, @Model.OwnerName!</h5>
+                <div class="my-3">
+                    <p class="mb-1"><strong>Wallet Number :</strong> @Model.WalletNumber</p>
+                    <p class="mb-1"><strong>Balance :</strong> Rp @Model.Balance.ToString("N0")</p>
+                </div>
+                <hr />
+                <div class="row text-center my-3">
+                    <div class="col text-success">
+                        <small class="text-muted">Total Income</small>
+                        <h6 class="fw-bold">Rp @Model.TotalIncome.ToString("N0")</h6>
+                    </div>
+                    <div class="col text-danger">
+                        <small class="text-muted">Total Expense</small>
+                        <h6 class="fw-bold">Rp @Model.TotalExpense.ToString("N0")</h6>
+                    </div>
+                </div>
+                <hr />
+                <div class="d-grid gap-2">
+                    <a href="/Wallets/TopUp/@Model.UserId" class="btn btn-success">1. Top Up</a>
+                    <a href="/Wallets/Transfer/@Model.UserId" class="btn btn-primary">2. Transfer</a>
+                    <a href="/Transactions/Index/@Model.UserId" class="btn btn-info text-white">3. Transaction History</a>
+                    <a href="/" class="btn btn-secondary">4. Change User</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

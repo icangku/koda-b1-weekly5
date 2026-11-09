@@ -1,0 +1,31 @@
+@model IEnumerable<Ewallet.Dtos.UserResponseDto>
+@{ ViewData["Title"] = "Pilih User"; }
+
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center mb-4">
+        <h2>========== Dana E-WALLET ==========</h2>
+        <p class="text-muted fs-5">Pilih akun pengguna untuk memulai simulasi</p>
+    </div>
+</div>
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger text-center">@TempData["Error"]</div>
+}
+
+<div class="row justify-content-center">
+    @foreach (var user in Model)
+    {
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm h-100">
+                <div class="card-body text-center">
+                    <h5 class="card-title">@user.Name</h5>
+                    <p class="text-muted mb-1">@user.Email</p>
+                    <p class="badge bg-primary fs-6">@user.WalletNumber</p>
+                    <hr />
+                    <a href="/Wallets/Dashboard/@user.Id" class="btn btn-outline-primary w-100">Gunakan Akun Ini</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
