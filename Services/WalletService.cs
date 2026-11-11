@@ -113,7 +113,7 @@ public class WalletService : IWalletService
                 ReceiverWalletId = wallet.Id,
                 Type = "TopUp",
                 Amount = amount,
-                Description = "Top Up Saldo",
+                Description = "Top Up Balance",
                 CreatedAt = DateTime.UtcNow
             };
             await _transactionRepo.AddAsync(transaction, conn, trans);

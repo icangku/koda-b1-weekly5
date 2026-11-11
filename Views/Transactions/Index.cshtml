@@ -1,37 +1,37 @@
 @model IEnumerable<Ewallet.Dtos.TransactionHistoryDto>
-@{ ViewData["Title"] = "Riwayat Transaksi"; }
+@{ ViewData["Title"] = "Transaction History"; }
 
 <div class="row justify-content-center">
     <div class="col-md-10">
         <div class="card shadow">
             <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
-                <h5 class="mb-0">Riwayat Transaksi</h5>
-                <a href="/Wallets/Dashboard/@ViewBag.UserId" class="btn btn-sm btn-light">Kembali ke Dashboard</a>
+                <h5 class="mb-0">Transaction History</h5>
+                <a href="/Wallets/Dashboard/@ViewBag.UserId" class="btn btn-sm btn-light">Back to Dashboard</a>
             </div>
             <div class="card-body">
                 <div class="mb-3 d-flex gap-2">
-                    <a href="/Transactions/Index/@ViewBag.UserId" class="btn btn-outline-secondary btn-sm @(ViewBag.CurrentFilter == null ? "active" : "")">Semua</a>
-                    <a href="/Transactions/Index/@ViewBag.UserId?filter=Income" class="btn btn-outline-success btn-sm @(ViewBag.CurrentFilter == "Income" ? "active" : "")">Pemasukan</a>
-                    <a href="/Transactions/Index/@ViewBag.UserId?filter=Expense" class="btn btn-outline-danger btn-sm @(ViewBag.CurrentFilter == "Expense" ? "active" : "")">Pengeluaran</a>
+                    <a href="/Transactions/Index/@ViewBag.UserId" class="btn btn-outline-secondary btn-sm @(ViewBag.CurrentFilter == null ? "active" : "")">All</a>
+                    <a href="/Transactions/Index/@ViewBag.UserId?filter=Income" class="btn btn-outline-success btn-sm @(ViewBag.CurrentFilter == "Income" ? "active" : "")">Income</a>
+                    <a href="/Transactions/Index/@ViewBag.UserId?filter=Expense" class="btn btn-outline-danger btn-sm @(ViewBag.CurrentFilter == "Expense" ? "active" : "")">Expense</a>
                 </div>
 
                 <div class="table-responsive">
                     <table class="table table-striped table-hover align-middle">
                         <thead>
                             <tr>
-                                <th>Tanggal</th>
-                                <th>Jenis</th>
-                                <th>Pengirim</th>
-                                <th>Penerima</th>
-                                <th>Nominal</th>
-                                <th>Keterangan</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Sender</th>
+                                <th>Receiver</th>
+                                <th>Amount</th>
+                                <th>Description</th>
                             </tr>
                         </thead>
                         <tbody>
                             @if (!Model.Any())
                             {
                                 <tr>
-                                    <td colspan="6" class="text-center text-muted">Belum ada transaksi.</td>
+                                    <td colspan="6" class="text-center text-muted">No transaction yet.</td>
                                 </tr>
                             }
                             else

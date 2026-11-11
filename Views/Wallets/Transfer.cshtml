@@ -4,7 +4,7 @@
     <div class="col-md-6">
         <div class="card shadow">
             <div class="card-header bg-primary text-white">
-                <h5 class="mb-0">Form Transfer Saldo</h5>
+                <h5 class="mb-0">Form Transfer Balance</h5>
             </div>
             <div class="card-body">
                 @if (ViewBag.Error != null)
@@ -12,24 +12,24 @@
                     <div class="alert alert-danger">@ViewBag.Error</div>
                 }
 
-                <p>Wallet Pengirim: <strong>@ViewBag.SenderWalletNumber</strong></p>
+                <p>Wallet Sender: <strong>@ViewBag.SenderWalletNumber</strong></p>
 
                 <form method="post" action="/Wallets/Transfer/@ViewBag.UserId">
                     <div class="mb-3">
-                        <label class="form-label">Nomor Wallet Tujuan</label>
+                        <label class="form-label">Wallet Destination Number</label>
                         <input type="text" name="receiverWalletNumber" class="form-control" placeholder="Contoh: WAL002" required />
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Nominal Transfer (Rp)</label>
+                        <label class="form-label">Transfer Amount (Rp)</label>
                         <input type="number" step="0.01" min="1" name="amount" class="form-control" required />
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Keterangan</label>
-                        <input type="text" name="description" class="form-control" placeholder="Catatan transaksi..." />
+                        <label class="form-label">Description</label>
+                        <input type="text" name="description" class="form-control" placeholder="Transaction description ..." />
                     </div>
                     <div class="d-flex justify-content-between">
-                        <a href="/Wallets/Dashboard/@ViewBag.UserId" class="btn btn-secondary">Kembali</a>
-                        <button type="submit" class="btn btn-primary" onclick="return confirm('Apakah Anda yakin ingin mengirim transfer ini?');">Kirim Transfer</button>
+                        <a href="/Wallets/Dashboard/@ViewBag.UserId" class="btn btn-secondary">Back</a>
+                        <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure to transfer?');">Send Transfer</button>
                     </div>
                 </form>
             </div>
