@@ -1,14 +1,14 @@
-﻿using Ewallet.Data;
+using Ewallet.Data;
 using Ewallet.Exceptions;
 using Ewallet.Interfaces;
 using Ewallet.Repositories;
 using Ewallet.Services;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddOpenApi();
 
 builder.Services.AddSingleton<IDbConnectionFactory, DbConnectionFactory>();
 builder.Services.AddScoped<IUserRepository, SqlUserRepository>();
@@ -20,11 +20,8 @@ var app = builder.Build();
 
 app.UseMiddleware<GlobalExceptionMiddleware>();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.MapOpenApi();
+app.MapScalarApiReference();
 
 app.UseStaticFiles();
 app.UseRouting();

@@ -22,9 +22,6 @@
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/obj/Debug/net10.0/Ewallet.Console.MvcApplicationPartsAssemblyInfo.cache
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/obj/Debug/net10.0/Ewallet.Console.RazorAssemblyInfo.cache
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/obj/Debug/net10.0/Ewallet.Console.RazorAssemblyInfo.cs
-/home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/obj/Debug/net10.0/Ewallet.Console.dll
-/home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/obj/Debug/net10.0/refint/Ewallet.Console.dll
-/home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/obj/Debug/net10.0/Ewallet.Console.pdb
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/appsettings.json
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/Ewallet.Console.staticwebassets.endpoints.json
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/Ewallet.Console
@@ -32,6 +29,7 @@
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/Ewallet.Console.runtimeconfig.json
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/Ewallet.Console.dll
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/Ewallet.Console.pdb
+/home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/Microsoft.AspNetCore.OpenApi.dll
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/Microsoft.Bcl.Cryptography.dll
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/Microsoft.Data.SqlClient.dll
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/Microsoft.Data.SqlClient.Extensions.Abstractions.dll
@@ -44,9 +42,7 @@
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/Microsoft.IdentityModel.Tokens.dll
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/Microsoft.OpenApi.dll
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/Microsoft.SqlServer.Server.dll
-/home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/Swashbuckle.AspNetCore.Swagger.dll
-/home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll
-/home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/Scalar.AspNetCore.dll
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/System.Configuration.ConfigurationManager.dll
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/System.IdentityModel.Tokens.Jwt.dll
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/bin/Debug/net10.0/System.Security.Cryptography.ProtectedData.dll
@@ -78,5 +74,8 @@
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/obj/Debug/net10.0/staticwebassets.build.endpoints.json
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/obj/Debug/net10.0/swae.build.ex.cache
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/obj/Debug/net10.0/Ewallet..02D93F26.Up2Date
+/home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/obj/Debug/net10.0/Ewallet.Console.dll
+/home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/obj/Debug/net10.0/refint/Ewallet.Console.dll
+/home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/obj/Debug/net10.0/Ewallet.Console.pdb
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/obj/Debug/net10.0/Ewallet.Console.genruntimeconfig.cache
 /home/alvin/Desktop/koda/net/ewallet-w4/src/Ewallet/obj/Debug/net10.0/ref/Ewallet.Console.dll
